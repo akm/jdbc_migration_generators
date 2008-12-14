@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.rubyforge_project = "rubybizcommons"
   spec.has_rdoc = false
 
-  spec.add_dependency("activesupport", ">= 2.1.0")
+  spec.add_dependency("rubeus", ">= 0.0.8")
   spec.files = FileList['Rakefile', 'bin/*', '*.rb', '{lib,test}/**/*.{rb}', 'generators/**/*.{rb}'].to_a
   spec.require_path = "lib"
   spec.requirements = ["none"]
