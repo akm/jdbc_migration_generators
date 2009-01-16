@@ -22,7 +22,7 @@ class JdbcMigrationGenerator < Rails::Generator::Base
         begin
           require_jdbc_migration
           require(@jdbc_config_path)
-        rescue => e
+        rescue Exception => e
           puts e.to_s
           puts e.backtrace.join("\n  ")
           raise e
